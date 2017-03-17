@@ -17,7 +17,7 @@ var makeList = function(result){
 };
 $(document).ready(function(){
   $("form").submit(function(event) {
-  
+    $("#doctors").text("");
     event.preventDefault();
     var issue = $("input#sick").val();
     getDoctors(issue, makeList);
